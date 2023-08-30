@@ -1,7 +1,10 @@
-length=5
-mas = [0] * length 
-for i in range(length):
-    mas[i] = int(input())
+num = int(input())  
+sum = 0
 
-print('Наименьшее число =',min(mas))
-print('Наибольшее число =',max(mas))
+for i in range(num):
+     d = num % 10
+     sum = sum + d
+     num = num //10
+print('finish')
+    
+print(sum)
