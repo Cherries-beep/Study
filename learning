@@ -1,3 +1,23 @@
-name = int (input())
+n = int(input())
+stroka = str(n)
+lenght = len(stroka)
+max = -1
+min = 100
 
-for i 
+list = [] * lenght
+
+for i in range(lenght):
+    while n!=0:
+        a = n%10
+        list.append(a)
+        if n>10:
+            n = n//10
+        else:
+            n = 0
+    if list[i] > max:
+        max = list[i]
+    if list[i] < min:
+        min = list[i]
+
+print('Максимальная цифра равна',max)
+print('Минимальная цифра равна', min)
