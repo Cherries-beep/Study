@@ -3,7 +3,7 @@ name: Check
 on: push
 jobs:
   lint:
-    runs-on: win-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout
         uses: action/checkout@v3
